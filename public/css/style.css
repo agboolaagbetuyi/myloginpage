@@ -1,15 +1,13 @@
-body{
+  body{
   margin:0;
-  background-size: cover;
-  background-position: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%; 
   }
-
+  .home_body{
+    background-image: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+  }
 /* this is header */
 
-.nav_bar{
+  .nav_bar{
   background-color: darkgreen;
   height: 40px;
   display: flex;
@@ -39,135 +37,133 @@ body{
   padding: 10px;
   text-align: center;
   position: fixed;
-  left: 0;
-  right: 0;
+  margin-left: 0;
+   left: 0; 
+   right: 0; 
   bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 0;  
 
   }
-  /* .footer_div{
-  text-align: center;
-  height: 30px;
-  margin-bottom: 2px;
-  margin-bottom: 0;
-   
-  } */
- .back{
-  margin-bottom: 120px;
-  } 
+ 
+   .back{
+    margin-bottom: 120px;
+    } 
  
   /* this is about */
   
     p{
     font-size:20px;
-    /* margin-bottom: 462px; */
+    margin-left: 10px;
+    
+    }
+
+    h2{
+      margin-left: 10px;
     }
 
     
     
       /* this is log in */
 
-      .login_login{
-        text-align: center;
-        color: darkgreen;
-        font-size: 20px;
+    .login_login{
+     text-align: center;
+     color: darkgreen;
+     font-size: 20px;
         }
       
-        .log_login{
-        padding-bottom: 20px; 
-         padding-top: 20px;
-      
-        }
-        .login_form{
-        height: 300px;
-        width: 350px;
-        margin-bottom: 228px;
-        background-color:rgba(37, 200, 37, 0.81);
-        border-radius: 10px;
-        margin-left: auto; 
-        margin-right: auto;
-      
-        }
-        .mail_address{
-        padding:10px ;
-        margin-left: 40px;
-        width: 200px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-      
-        }
-      
-       
-        .register_button{
-        border-radius: 3px;
-        padding: 6px;
-        background-color: rgb(4, 228, 4);
-        font-size: 15px;
-        color:darkgreen;
-        border: none;
-        width: 130px;
-        margin-left: 100px;
-        cursor: pointer;
-        }
-      
-        .register_button:active{
-        background-color: darkgreen
-        }   
-      
-      .mail_address{
-        margin-top: 20px;
-      }
+    .log_login{
+    padding-bottom: 20px; 
+    padding-top: 20px;
 
-      /* this is navbar */
-        .navbar_div{
-        margin-bottom: 570px;
-        }
-      
-/* this is sign up */
-.acct_signup{
-  text-align: center;
-  color: darkgreen;
-  display: block;
-
-  }
-
-  .email_email{
-  /* margin-top: 20px; */
-  margin-left: auto;
-  margin-right: auto; 
-  height: 400px;
-  width: 350px;
+   }
+  .login_form{
+  height: 300px;
+  width: 320px;
+  margin-bottom: 228px;
+  background-color:rgba(37, 200, 37, 0.81);
   border-radius: 10px;
-  background-color:rgba(37, 200, 37, 0.81)
+  margin-left: auto; 
+  margin-right: auto;
+
+  }
+  .mail_address{
+  padding:10px ;
+  margin-left: 40px;
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  
 
   }
 
-  .mail_address{
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 200px;
-  margin-top: 20px;
-  margin-left: 40px;
-
-
-}
-
-  .register_register{
-  padding: 5px;
-  width: 100px;
-  /* background-color: rgb(4, 228, 4); */
-  font-weight: bold;
-  color:darkgreen;
-  justify-content: center;
-  margin-left: 100px;
+  
+  .register_button{
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 15px;
   border: none;
-  margin-top: 20px;
-  cursor: pointer;
-  
-}
-  .log_login{
+  width: 130px;
   margin-left: 100px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  }
+      
+  .register_button:active{
+    background-color: darkgreen
+    }   
   
-}
+    .mail_address{
+    margin-top: 20px;
+  }
+
+  /* this is navbar */
+    .navbar_div{
+    margin-bottom: 570px;
+    }
+  
+/* this is sign up */
+    .acct_signup{
+    text-align: center;
+    color: darkgreen;
+    display: block;
+
+    }
+
+    .email_email{
+    margin-left: auto;
+    margin-right: auto; 
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color:rgba(37, 200, 37, 0.81)
+
+    }
+
+    .mail_address{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 40px;
+
+
+  }
+
+    .register_register{
+    padding: 5px;
+    width: 100px;
+    font-weight: bold;
+    color:darkgreen;
+    justify-content: center;
+    margin-left: 100px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    
+  }
+    .log_login{
+    margin-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
