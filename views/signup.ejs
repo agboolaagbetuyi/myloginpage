@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <head>
+      <%- include ('./components/head.ejs') %>
+    <!-- <link rel="stylesheet" href="/public/css/signup.css"> -->
+    </head>
+    <body>
+    <header>
+      <%- include ('./components/header.ejs') %>
+    </header>
+     <h2 class="acct_signup">Account sign up</h2>
+    <p><%- errors %></p>
+    <div class="back">
+    <form class="email_email" action="/signup" method="post">
+
+      <input class="mail_address" type="email" name="email" placeholder="Email Address" /><br>
+    
+      <input class="mail_address" type="text" name="fullName" placeholder="Full Name" /><br>
+
+      <input class="mail_address" type="password" name="password" placeholder="Password" /><br>
+
+      <input class="mail_address" type="password" name="password2" placeholder="Repeat Password" /><br>
+
+      <a href="/signup"><button class="register_register" type="submit">Sign Up</button></a>
+      </form>
+      </div>
+    <footer>
+    <%-include ('./components/footer.ejs')%>
+    </footer>
+    </div>
+    </body>
+    </html>

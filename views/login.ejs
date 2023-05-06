@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <%- include ('./components/head.ejs') %>
+  <!-- <link rel="stylesheet" href="/public/css/login.css"> -->
+  </head>
+  <body>
+  <header>
+   <%- include ('./components/header.ejs') %>
+  </header>
+  <h2 class="login_login">Account Login Form</h2>
+  <p><%= errors %></p>
+  <form class="login_form" action="" method="post">
+    
+  <input  class="mail_address" type="text" name="email" id="email" placeholder="Email Address" required><br>
+
+
+  <input  class="mail_address" type="text" name="email" id="email" placeholder="Password" type="password" name="password" id="password" placeholder="Password" required><br>
+
+
+ <button class="register_button" type="submit" onclick="display('dashboard')">Login</button>
+  </form>
+  <footer>
+   <%-include('./components/footer.ejs') %>
+  </footer>
+  </body>
+  </html>
