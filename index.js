@@ -36,7 +36,6 @@ app.use(express.urlencoded({ extended: false }))
 
 
 
-
 app.use("/about", aboutRouter)
 app.use("/dashboard", dashboardRouter)
 app.use("/home", homeRouter)
