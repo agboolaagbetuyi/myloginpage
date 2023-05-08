@@ -1,4 +1,5 @@
 const express = require("express")
+const passport = require('passport')
 const app = express()
 const port = 3005 
 const ejs = require("ejs")
@@ -42,6 +43,16 @@ app.use("/login", loginRouter)
 app.use("/", navbarRouter)
 app.use("/signup", signupRouter)
 
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+app.use( function( req, res,next) {
+  res.locals.success_msg = req.flash('success_ msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next()
+});
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
