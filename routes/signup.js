@@ -12,14 +12,14 @@
   if (!email || !fullName || !password || !password2) {
     errors.push('All fields are required')
   }
-  if (password !== password2) {
+  if (password != password2) {
     errors.push("Password doesn't match")
   }
   if (password.length < 6) {
     errors.push('Password must be a minimum of 6 characters')
   }
   if (errors.length > 0) {
-    res.render('signup',{errors,email,fullName, password, password2})
+    res.render('signup',{errors, email, fullName, password, password2})
   } else {
     User.findOne({ email: email }).then(user => {
       if(user) {
@@ -49,7 +49,6 @@
   router.get("/", (req, res) => {
   res.render("signup", {errors: '' })
   })
-
 
 
   module.exports = router;

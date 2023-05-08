@@ -3,16 +3,15 @@
     <head>
     <head>
       <%- include ('./components/head.ejs') %>
-    <!-- <link rel="stylesheet" href="/public/css/signup.css"> -->
     </head>
     <body>
-    <header>
+      <header>
       <%- include ('./components/header.ejs') %>
-    </header>
+      </header>
      <h2 class="acct_signup">Account sign up</h2>
-    <p><%- errors %></p>
-    <div class="back">
-    <form class="email_email" action="/signup" method="post">
+     <p class="errors"> <%- errors %></p>
+      <div class="back">
+     <form class="email_email" action="/signup" method="post">
 
       <input class="mail_address" type="email" name="email" placeholder="Email Address" /><br>
     

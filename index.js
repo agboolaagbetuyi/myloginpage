@@ -43,7 +43,6 @@ app.use("/", navbarRouter)
 app.use("/signup", signupRouter)
 
 
-
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
 })

@@ -12,7 +12,6 @@
     res.render("login", {errors: ''})
   }   
   
- 
   else{
     res.redirect('/dashboard')
   }
