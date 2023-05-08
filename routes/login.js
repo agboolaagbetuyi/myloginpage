@@ -22,17 +22,17 @@
     
     
     
-  //   const { email, password } = req.body
-  //   console.log(req.body)
-  // let errors=[]
-  // if(!email || !password){
-  //   errors.push("All fields are required")
-  //   res.render("login", {errors: ''})
-  // }   
+    const { email, password } = req.body
+    console.log(req.body)
+  let errors=[]
+  if(!email || !password){
+    errors.push("All fields are required")
+    res.render("login", {errors: ''})
+  }   
   
-  // else{
-  //   res.redirect('/dashboard')
-  // }
+  else{
+    res.redirect('/dashboard')
+  }
 })
 
   router.get("/", (req, res) => {
