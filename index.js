@@ -1,5 +1,5 @@
 const express = require("express")
-const passport = require('passport')
+var passport = require('passport')
 const app = express()
 const port = 3005 
 const ejs = require("ejs")
